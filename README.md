@@ -7,7 +7,7 @@ You could easily use this extension on a wide number of browsers with a Datadog 
 
 This extension is based on the official link to MDN documentation of the different steps: https://developer.mozilla.org/en-US/docs/Web/API/Performance_API/Navigation_timing
 
-![MDN Performance API - Navigation timing](https://github.com/gcaglio/ChromeExt-DataPaws/blob/main/doc/timestamp-diagram.png?raw=true)
+![MDN Performance API - Navigation timing](https://github.com/gcaglio/EdgeExt-DataPaws/blob/main/doc/timestamp-diagram.png?raw=true)
 
 ## Tested on
 - Chrome on Windows 10
@@ -51,7 +51,7 @@ The extension is compatible with any Chromium-based browser (Brave, Opera, Vival
 You need to configure the extension to send the metrics to the correct Datadog URI, with your API-KEY. 
 Go to the "options" page of the extension and fill the fields with proper values matching your Datadog account.
 
-![Datapaws extension options configuration](https://github.com/gcaglio/ChromeExt-DataPaws/blob/main/doc/datapaws_options.png?raw=true)
+![Datapaws extension options configuration](https://github.com/gcaglio/EdgeExt-DataPaws/blob/main/doc/datapaws_options.png?raw=true)
 
 ### Custom Tags
 The extension now supports custom tags that can be added to all metrics. This is useful for:
@@ -176,7 +176,7 @@ If it's ok for you to live with 1-day only metric retention, you can continue to
 
 In the `doc/dd_dashboards` folder you can find Datadog dashboard examples. Here are some sample graphs:
 
-![Datapaws dashboard sample graphs](https://github.com/gcaglio/ChromeExt-DataPaws/blob/main/doc/datapaws_dashboard_graphs.png?raw=true)
+![Datapaws dashboard sample graphs](https://github.com/gcaglio/EdgeExt-DataPaws/blob/main/doc/datapaws_dashboard_graphs.png?raw=true)
 
 ## Custom Tags Use Cases
 
