@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Datapaws Monitoring Extension",
+  "version": "1.2",
+  "description": "Collect console messages, page load times, and render timings, and send them to Datadog. Compatible with Chrome, Edge, and other Chromium-based browsers.",
+  "permissions": ["storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["inject.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "options_ui": 
+  { 
+    "page": "options.html",
+    "open_in_tab": true 
+  },
+  "icons": {
+    "16": "datapaws_extension.png",
+    "48": "datapaws_extension.png",
+    "128": "datapaws_extension.png"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "dd_url": {
+      "type": "string",
+      "default": "https://api.datadoghq.com",
+      "description": "Datadog API URL, example: https://api.datadoghq.com, https://api.datadoghq.eu, etc."
+    },
+    "dd_api": {
+      "type": "string",
+      "description": "Datadog API key to send metric to Datadog",
+      "default": ""
+    },
+    "dd_hostname": {
+      "type": "string",
+      "description": "Hostname that will be used to send metric to datadog. All the metrics will belong to this hostname.",
+      "default": "datapaws.unique.host.local"
+    },
+    "dd_custom_tags": {
+      "type": "string",
+      "description": "Custom tags in format: tag_name=tag_value;tag_name1=tag_value1. Example: department=IT;environment=production;cost_center=123456",
+      "default": ""
+    }
+  }
+}
